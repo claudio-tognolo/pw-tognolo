@@ -1,0 +1,2 @@
+INSERT INTO `pw_tognolo`.`user` (`deleted`, `fname`, `lname`, `pwd`, `usr`, `version`) VALUES ('0', 'Luca', 'Guerrini',  'pass1', 'lguerrini', '1');
+INSERT INTO `pw_tognolo`.`user` (`deleted`, `fname`, `lname`, `pwd`, `usr`, `version`) VALUES ('0', 'Alessandro', 'Marchisio',  'pass2', 'amarchisio', '1');

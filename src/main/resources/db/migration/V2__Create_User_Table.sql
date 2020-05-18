@@ -1,0 +1,2 @@
+CREATE TABLE post (id BIGINT AUTO_INCREMENT NOT NULL, body VARCHAR(255) NOT NULL, created_by VARCHAR(255), created_on DATETIME(3), deleted TINYINT(1) default 0, end_date DATE, modified_by VARCHAR(255), modified_on DATETIME(3), title VARCHAR(255) NOT NULL, version BIGINT, OWNER_id BIGINT, PRIMARY KEY (id));
+ALTER TABLE post ADD CONSTRAINT FK_post_OWNER_id FOREIGN KEY (OWNER_id) REFERENCES user (id);

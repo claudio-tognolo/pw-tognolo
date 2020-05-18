@@ -1,0 +1,1 @@
+INSERT INTO `pw_tognolo`.`post` (`body`, `title`, `version`, `OWNER_id`) VALUES ('BodyPost1', 'Mio primo Post', '1', '1');

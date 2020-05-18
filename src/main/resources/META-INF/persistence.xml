@@ -9,6 +9,7 @@
             <property name="javax.persistence.schema-generation.scripts.create-target" value="create_projectwork.sql"/>
             <property name="javax.persistence.schema-generation.scripts.drop-target" value="drop_projectwork.sql"/>
             <property name="eclipselink.target-database" value="MySQL" />
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MariaDB103Dialect"/>
         </properties>
     </persistence-unit>
 </persistence>
