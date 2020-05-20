@@ -8,6 +8,7 @@ package it.tss.pw.posts;
 //import it.tss.pw.documents.DocumentsResource;
 import it.tss.pw.users.UserStore;
 import it.tss.pw.users.User;
+import it.tss.pw.documents.DocumentsResource;
 import java.util.Optional;
 import javax.annotation.PostConstruct;
 import javax.annotation.security.RolesAllowed;
@@ -69,13 +70,13 @@ public class PostResource {
         return Response.status(Response.Status.NO_CONTENT).build();
     }
 
-    //@Path("documents")
-    //public DocumentsResource documents() {
-    //    DocumentsResource sub = resource.getResource(DocumentsResource.class);
-    //    sub.setUserId(userId);
-    //    sub.setPostId(id);
-    //    return sub;
-    //}
+    @Path("documents")
+    public DocumentsResource documents() {
+        DocumentsResource sub = resource.getResource(DocumentsResource.class);
+        sub.setUserId(userId);
+        sub.setPostId(id);
+        return sub;
+    }
 
     /*
     getter/setter
